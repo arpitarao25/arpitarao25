@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 04, 2024 at 01:52 PM
+-- Generation Time: Nov 04, 2024 at 03:59 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -112,6 +112,7 @@ INSERT INTO `login` (`usr_nm`, `pwd`) VALUES
 --
 
 CREATE TABLE `register` (
+  `id` int(11) NOT NULL,
   `f_name` varchar(30) NOT NULL,
   `age` int(30) NOT NULL,
   `p_no` int(30) NOT NULL,
@@ -124,11 +125,31 @@ CREATE TABLE `register` (
 -- Dumping data for table `register`
 --
 
-INSERT INTO `register` (`f_name`, `age`, `p_no`, `email`, `psd`, `re_psd`) VALUES
-('arpita', 20, 2147483647, 'arpitarao@gmail.com', 'arpita', 'arpita'),
-('manas', 20, 2147483647, 'manasyelkar@gmail.com', 'arp', 'arp'),
-('nirmiti parkhe', 20, 2147483647, 'arpitarao@gmail.com', 'arp', 'arp'),
-('aditya', 20, 2147483647, 'arpitarao@gmail.com', 'arp', 'arp');
+INSERT INTO `register` (`id`, `f_name`, `age`, `p_no`, `email`, `psd`, `re_psd`) VALUES
+(1, 'Manas', 20, 0, 'manasyelkar16@gmail.com', 'mansi123', 'mansi1232'),
+(2, 'arpita', 22, 1231231231, 'arpita.rao@gmail.com', 'appu123', 'appu123'),
+(4, 'arpita', 22, 1231231231, 'arpita.rao@gmail.com', 'appu123', 'appu123'),
+(5, 'Manas', 20, 1231231231, 'manas.yelkar@gmail.com', 'mansi123', 'mansi1232');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `register`
+--
+ALTER TABLE `register`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `register`
+--
+ALTER TABLE `register`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
