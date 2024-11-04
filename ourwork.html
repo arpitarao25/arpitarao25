@@ -1,0 +1,294 @@
+<html>
+<head>
+<style>
+* {
+box-sizing: border-box}
+body {font-family: Verdana,
+sans-serif; 
+margin:0
+}
+
+.mySlides {
+display: none
+}
+
+img {
+vertical-align: center;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.mvv-container{
+max-width: 90%;
+margin: 50px auto 0;
+}
+.mvv-container .mvv-block
+{
+display: flex;
+flex-direction : row;
+flex-wrap: wrap;
+display: grid;
+ align-items: center;
+grid-template-columns: 10fr 1000fr ;
+column-gap: 5px;
+}
+.mvv-container .mvv-block .image
+{
+width: 500px;
+overflow: hidden;
+line-height: 0;
+}
+.mvv-container .mvv-block .image img
+{
+width: 500px;
+height: 300px;
+transition: .3s;
+transform: scale(1);
+}
+
+.mvv-container .mvv-block .content
+{
+flex: 0 0 auto;
+width: calc(100% - 400px);
+box-sizing: border-box;
+align-self: right;
+}
+.mvv-container .mvv-block .content h5
+{
+font-weight: 700;
+font-size: 22px;
+color: black;
+margin-bottom: 10px;
+align-self: center;
+}
+.mvv-container .mvv-block .content p
+{
+font-size: 15px;
+align-self: right;
+list-style-type: bullet;
+}
+</style>
+</head>
+<body>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img5.jpg" width:100% height=70%>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img6.jpg" width:150% height=70%>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img7.jpg" width:100% height=70%>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="img8.jpg" width:100% height=70%>
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)"><</a>
+<a class="next" onclick="plusSlides(1)">></a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class="about-section">
+  <h1>How We Help People?</h1>
+  <p>Helping others is an important part of life; it gives you a sense of purpose and boosts your happiness while positively affecting the world around you.
+     Help your community by donating and fundraising for causes that you believe in. Volunteer your time as well.
+     Helping others allows you to connect with people and get a sense of purpose. The more you help people, the more accomplished you�ll feel.
+  </p>
+</div>
+<div class="mvv-container">
+<center><h1>Physical Help</h1></center>
+<p>If you�re concerned about whether an elderly relative is having trouble caring for themselves, it may be time to step in and offer some help. 
+Before you start helping, take time to assess their needs. 
+They may need assistance caring for their medical needs, or perhaps they could benefit from extra support during their day-to-day activities. 
+Before you can provide care for an elderly person, you need to figure out what kind of care would benefit them the most. Depending on their overall health and how well they can manage day-to-day tasks, they may need anything from occasional help to constant support.
+As people age, it can become more difficult for them to manage day-to-day tasks like cooking, cleaning, and grocery shopping. 
+Talk to them about what you can do to help them meet these needs.
+</p>
+  <div class="mvv-block">
+    <div class="image">
+      <img src="physical.jpg" alt="">
+    </div>
+    <div class="content">
+      <h4>Facilities provided by our website are:</h4>
+      <ul>
+      <li>Provide grocery services</li><br>
+      <li>providing health care facilities</li><br>
+      <li>providing medication services</li><br>
+      <li>providing tranportation services</li><br>
+    </div>
+  </div>
+</div>
+
+<div class="mvv-container">
+<center><h1>Mental Health</h1></center>
+<p>Mental health includes our emotional, psychological, and social well-being. 
+It affects how we think, feel, and act. 
+It also helps determine how we handle stress, relate to others, and make healthy choices.
+Mental health is important at every stage of life, from childhood and adolescence through adulthood.
+Mental and physical health are equally important components of overall health.  
+It�s important to remember that a person�s mental health can change over time, depending on many factors.  
+When the demands placed on a person exceed their resources and coping abilities, their mental health could be impacted. 
+For example, if someone is working long hours, caring for a relative, or experiencing economic hardship, they may experience poor mental health.
+</p>
+  <div class="mvv-block">
+    <div class="image">
+      <img src="mental.jpg" alt="">
+    </div>
+    <div class="content">
+      <h4>Our website provies way by which people can be mentally fit</h4>     
+      <ul>
+      <li>Value yourself</li><br>
+      <li>Take care of your body</li><br>
+      <li>Surround yourself with good people</li><br>
+      <li>Give yourself</li><br>
+      <li>Learn how to deal with stress</li><br>
+      <li>Quiet your mind</li><br>
+      <li>Set realistic goals</li><br>
+      <li>Avoid alcohol and other drugs</li><br>
+      <li>Get help when you need it</li><br>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<center><h3> Some of the links for Youtube Videos are:</h3></center>
+<center>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/nCrjevx3-Js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen">
+</iframe>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/BpzVvUGfJeA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/d1sVO6x9p5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+</center>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 20px;
+  margin-left: 3%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  padding-bottom: 15px;
+
+}
+
+.about-section {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.admin-button, .comment-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.admin-button:hover, .comment-button:hover {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Organizational Alliances</h1>
+  <p>The Organization We Help </p>
+</div>
+<br><br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img8.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Helping Hand</h2>
+        <p>Helping hands is a Non-Government Organization is a child orphanage which works for Education, Health & Nutrition for homeless children. Helping hands is running an orphanage which provide shelter to these children. Helping hand’s motive is to aim is all children realize their full potential support in societies which respect people’s rights & dignity. </p>
+        <button onclick="window.location.href='https://www.helpinghandindiango.org/'" class="admin-button">Visit Now</button>
+  <button  onclick="window.location.href='https://www.helpinghandindiango.org/about-us/'" class="comment-button">About Us</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="img10.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Smile</h2>
+        <p>We help children get ready for kindergarten and learn to read by third grade — a major indicator of future success. We’re especially focused on reaching vulnerable children in rural America where early learning resources are scarce. Globally, we ensure that no child’s learning stops because they are caught up in crisis..</p>
+        <button onclick="window.location.href='https://www.smilefoundationindia.org/'" class="admin-button">Visit Now</button>
+  <button onclick="window.location.href='https://www.smilefoundationindia.org/our-story/'" class="comment-button">About Us</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="img14.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Help Age</h2>
+        <p>A roof over their heads is a critical need of the elder who are sick and abandoned by family & those uprooted by disasters.HelpAge India has established model homes for the senior citizens & aged in places such as Patiala & Gurdaspur in Punjab & Kolkata in West Bengal. HelpAge supports 300 old age homes & runs 5 barrier homes for the aged in India.</p>
+<button onclick="window.location.href='https://www.helpageindia.org/'" class="admin-button">Visit Now</button>
+  <button onclick="window.location.href='https://www.helpageindia.org/aboutus/'" class="comment-button">About Us</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="imga.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Shikshan</h2>
+        <p>The major contributing factor to reduced learning capabilities in children is directly impacted by health and nutrition. Evidence in India has shown that food insecurity during childhood reduced reading capability and numeracy scores while resulting in depleting short-term memory. Mid-day meals are a great incentive to bring children back to school and a means to keep their nutritional levels in check. Nutritious meals help children concentrate in class and help in eliminating classroom hunger.  </p>
+        <button onclick="window.location.href='https://www.sikshana.org/'" class="admin-button">Visit Now</button>
+  <button onclick="window.location.href='https://www.sikshana.org/About/'" class="comment-button">About Us</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="imgb.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Ekanta</h2>
+        <p>Every child deserves access to quality learning opportunities from the age of three years when they begin to acquire early learning skills to the end of their school education at age 18. Through several state-level programmes & national policy advocacy, Save the Children has supported the education of millions of children since 2008! We address children’s learning needs through an safe learning environment for children between 3-18 years for an active, purposeful adult life</p>
+        <button onclick="window.location.href='https://ekaantfoundation.org/'" class="admin-button" >Visit Now</button>
+  <button onclick="window.location.href='https://ekaantfoundation.org/about-us.html'" class="comment-button">About Us</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="imgc.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Shanti Niketen</h2>
+        <p>Currently there are a projected 138 million elderly in India. It works through 26 State Offices across India, runs numerous programs on-ground, addressing elder needs and advocating for their rights, such as their right to Universal Pension, quality Healthcare, action against Elder Abuse & many more at a national, state & societal level with Central & State governments. It advocates for elder friendly policies & their implementation.</p>
+<button onclick="window.location.href='https://www.theparentscare.com/service/shantiniketan-senior-living-home'"class="admin-button">Visit Now</button>
+  <button onclick="window.location.href='https://www.theparentscare.com/about-us'" class="comment-button">About Us</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<center><img src="imgg.jpg" alt="Italian Trulli"style="width:400px;height:300px;"></center>
+
+</body>
+</html>

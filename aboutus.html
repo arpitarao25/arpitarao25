@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head><title>About Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 27.33%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left: 3%;
+  margin-right: 2.5%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  padding: 12px;
+  text-align: center;
+  background-color:    #d9d9f2;
+  border-radius: 10px;
+  color: black;
+  border-style: solid;
+}
+
+.card:hover {
+  box-shadow: 0 5px 70px 0 black;
+}
+
+.about-section {
+
+  padding: 50px;
+  text-align: center;
+  color: black;
+  margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18.5px;
+    font-family: sans-serif;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  }
+}
+.fa {font-size:50px;}
+
+.w3-container {
+background-color:    #c6c6ec;
+
+
+}
+
+.title {
+  color: grey;
+}
+
+@media screen and (max-width: 550px) {
+  .column {
+    width: 100%;
+    display: block;
+}
+
+#bar {
+  overflow: hidden;
+}
+
+#bar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#bar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+    </style>
+</head>
+<body>
+
+
+  <div class="w3-container w3-black">
+<center><h1></font>About Us</h1></center>
+</div>
+<div class="w3-container">
+    <div id="bar" >
+  <a class="w3-button w3-indigo active" href="index.php">Back</button></a>
+</div>
+<div class="about-section">
+
+  <p><b>Sahayog is  not-for-profit interface working for betterment of people. 
+     We mainly focus is to look after the physical and mental health of elders, childrens and senior citizens and make them interact more with younger generations without regard to age, race, religion, or ability to pay.
+     Sahayog try best to empower youths through relevant education, innovative healthcare, and livelihood programs.
+     Sahayog provide a homely and respectable living for the Elders with utmost commitment, dedication, trust and care to promote compassion and love.
+     Sahyog is committed to helping people create healthy atmosphere where the mental health of citizens is valued and protected.
+     We always dream of a society based on legitimate rights, equity, justice, honesty, social sensitivity, and a culture of service in which all are self-reliant. 
+     Our main goal is the empowerment of women and girls for the betterment and takes out them from poverty, discrimination, and violations.
+  </p>
+  <br><br>
+  <p style="text-align:left">
+  <ul style="text-align:left" >
+  <li>Location- Kakrola, Near Dwarka Mor Metro Station, New Delhi  110078</li><br>
+  <li>phone number- +91 1234567891</li><br>
+  <li>Email Id- sahayog@gmail.com </li></b>
+  </ul></p></div>
+</div>
+<br><br>
+<h1 style="text-align:center"><b><u>Our Services</u></b></h1>
+<br>        
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="individual.png" alt="Jane" style="width:30%">
+      <div class="container">
+        <h3><b>Individual</b></h3>
+        <p> 
+           Sahayog has received the love, support and trust of millions of individuals, who have enabled us to create high impact programmes and benefit over 1.5 million people every year. 
+           We always take pride in making our supporters active partners in our programmes either than just channelize their resources to do good.
+        </p><br>
+        <p>jane@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="oldage.png" alt="Jane" style="width:30%">
+      <div class="container">
+        <h3><b>Old Age Home</b></h3>
+        <p>
+           Sahayog look after the physical and mental health of elders, childrens and senior citizens and make them interact more with younger generations so that they can forget negligence that they have received from their families with utmost trust, care, commitment, dedication.
+           We supports 100 old age homes for the aged in India.
+        </p><br>
+        <p>oldagehome@gmail.com</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="ngo.png" alt="John" style="width:30%">
+      <div class="container">
+        <h3><b>NGO</b></h3>
+        <p>
+           Many corporate are fulfilling their CSR initiatives and showing their support by sponsoring events as helping hand and create awareness which showcasing the corporate positive approach towards good causes. 
+           Corporate Social Responsibility is the continuous commitment of a corporate body to improve community well being.
+        </p><br>
+        <p>abcngo@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+<script type="text/javascript">
+
+window.onscroll = function() {myFunction()};
+
+var bar = document.getElementById("bar");
+var sticky = bar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    bar.classList.add("sticky")
+  } else {
+    bar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
